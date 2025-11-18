@@ -1,0 +1,7 @@
+sosiska = 2 * 729 ** 2014 + 2 * 243 ** 2016 - 2 * 81 ** 2018 + 2 * 27 ** 2020 - 2 * 9 ** 2022 - 2024
+c = 0
+while sosiska > 0:
+    if sosiska % 27 > 9:
+        c = c + 1
+    sosiska = sosiska // 27
+print(c)
