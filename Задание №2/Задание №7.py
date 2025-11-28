@@ -6,4 +6,3 @@ for x in range(2):
                 F = (y <= x) and (not w) and z
                 if F == 1:
                     print(x, y, z, w)
-                    
