@@ -1,0 +1,11 @@
+for p in range(10, 37):
+    for x in range(1, p):
+        for y in range(1, p):
+            num1 = 2 * p ** 3 + 4 * p ** 2 + x * p ** 1 + 9 * p ** 0
+            num2 = y * p ** 3 + x * p ** 2 + y * p ** 1 + 3 * p ** 0
+            num3 = x * p ** 3 + 4 * p ** 2 + y * p ** 1 + 0 * p ** 0
+
+            if num1 + num2 == num3:
+                print(p, x, y)
+
+print(int('B88', 12))

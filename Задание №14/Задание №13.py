@@ -1,0 +1,11 @@
+for x in range(1, 58):
+    for y in range(0, 72):
+        num1 = 3 * 58 ** 3 + 4 * 58 ** 2 + x * 58 ** 1 + 5 * 58 ** 0
+        num2 = 1 * 61 ** 3 + 2 * 61 ** 2 + x * 61 ** 1 + 7 * 61 ** 0
+        num3 = x * 67 ** 3 + 4 * 67 ** 2 + 5 * 67 ** 1 + 6 * 67 ** 0
+        num4 = x * 72 ** 3 + 5 * 72 ** 2 + y * 72 ** 1 + 7 * 72 ** 0
+
+        number = num1 + num2 + num3 - num4
+
+        if number > 0 and number % 363 == 0:
+            print(x + y)
