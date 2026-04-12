@@ -13,7 +13,7 @@
 # print((f(257487) // 683 + f(257477) // 67) // f(257472))
 
 # ПАМЯТЬ В ПОТОЛОК !!!
-
+#
 # f = [0] * 258000
 # for n in range(0, 258000):
 #     if n < 10: f[n] = 3
@@ -35,23 +35,9 @@ def f(n):
 
 
 def main():
+    # Fraction(a, b) = a / b
+
     res = Fraction(Fraction(f(257487), 683) + Fraction(f(257477), 67), f(257472))
     print(res)
 
 Thread(target=main).start()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
