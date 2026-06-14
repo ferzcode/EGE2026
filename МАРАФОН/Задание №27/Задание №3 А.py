@@ -11,24 +11,20 @@ def center(cl):
 
 cl1 = []
 cl2 = []
-orange = []
-for p in open('27_A.txt'):
+cl3 = []
+
+for p in open('27_B.txt'):
     s = p.replace(',', '.').split()
 
     x = float(s[0])
     y = float(s[1])
     h = s[2]
 
-    if y < 23.5:
+    if 20 < x < 30:
         cl1.append([x, y])
-    else:
+    if 10 < x < 20 and 15 < y < 22:
         cl2.append([x, y])
+    if y > 22:
+        cl3.append([x, y])
 
-    if h[0] == 'K' and h[-2:] == 'VI':
-        orange.append([x, y])
-
-c1 = center(cl1)
-c2 = center(cl2)
-
-A2 = max([dist(c1, p) for p in orange] + [dist(c2, p) for p in orange])
-print(A2 * 10000)
+print(len(cl1), len(cl2), len(cl3),
