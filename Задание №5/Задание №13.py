@@ -17,7 +17,6 @@ def f(n):
         n = n // 3
     return new
 
-
 a = []
 for n in range(1, 100000):
     b = f(n)
