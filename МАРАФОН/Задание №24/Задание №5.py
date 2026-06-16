@@ -16,10 +16,3 @@ for c in f.split():
         if eval(c) == 1:
             mx = max(len(c), mx)
 print(mx)
-
-# reg = fr'(?=(([1-9][0-9]*[+*][1-9][0-9]*)+))'
-# for stroka in finditer(reg, f):
-#     g = stroka.group(2)
-#
-#     if eval(g) == 1:
-#         print(g)
