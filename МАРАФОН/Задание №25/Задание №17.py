@@ -1,10 +1,10 @@
 from math import*
 
-# def f(x, d = 2):
-#     for d in range(d, round(x ** 0.5) + 1):
-#         if x % d == 0:
-#             return [d] + f(x // d, d)
-#     return [x]
+def f(x, d = 2):
+    for d in range(d, round(x ** 0.5) + 1):
+        if x % d == 0:
+            return [d] + f(x // d, d)
+    return [x]
 
 def f(x):
     d = []
@@ -33,3 +33,4 @@ for x in range(31_991_737, 32_000_000):
 
     if c == 6:
         break
+

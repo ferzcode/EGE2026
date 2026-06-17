@@ -1,0 +1,10 @@
+from itertools import *
+
+c = 0
+for x in product('0123456', repeat=5):
+    s = ''.join(x)
+
+    if s[0] != '0' and s.count('6') == 1:
+        if '00' not in s and '11' not in s and '22' not in s and '33' not in s and '44' not in s and '55' not in s and '66' not in s:
+            c += 1
+print(c)
